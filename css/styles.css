@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Norse";
+}
+
+.half-background {
+    width: 35vw;
+    height: 100vh;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    float: left;
+}
+
