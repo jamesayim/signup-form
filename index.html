@@ -4,40 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Form</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <div class="half-background">
-        <p class="credit">image by Étienne Beauregard-Riverin</p>
+        <p class="credit">Photo by <a referrerpolicy="no-referrer" href="https://unsplash.com/@etienne_beauregard" class="owner">Étienne Beauregard-Riverin</a> on <a href="https://unsplash.com/" class="unsplash">Unsplash</a></p>
     </div>
 
-    <h3 class="top-info">Find Your Dream Home Today! Sign up to get exclusive listings, alerts, and insider access to the best properties on the market.</h3>
+    <div class="topinfo-container">
+        <p class="top-info">Find Your Dream Home Today! 
+            <br>Sign up now to get exclusive listings, alerts, and insider access to the best properties on the market.
+        </p>
+    </div>
 
     <form action="#" method="post">
+            <div class="namegroup">
+                <div class="formgroup1">
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" name="first-name" id="firstname" autocomplete="off" required>
+                </div>
+                <div class="formgroup1">
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" name="last-name" id="lastname">
+                </div>
+            </div>
         
-        <div class="username container">
-            <label for="firstname">FIRST NAME</label>
-            <input type="text" name="first-name" id="firstname" required>
-            <label for="lastname">LAST NAME</label>
-            <input type="text" name="last-name" id="lastname">
-        </div>
-
-        <div class="contact container">
-            <label for="useremail">EMAIL</label>
-            <input type="email" name="user-email" id="useremail" required>
-            <label for="phonenumber">PHONE NUMBER</label>
-            <input type="tel" name="phone-number" id="phonenumber">
-        </div>
+            <div class="contactgroup">
+                <div class="formgroup2">
+                    <label for="useremail">EMAIL</label>
+                    <input type="email" name="user-email" id="useremail" required>
+                </div>
+                <div class="formgroup2">
+                    <label for="phonenumber">PHONE NUMBER</label>
+                    <input type="tel" name="phone-number" id="phonenumber">
+                </div>
+            </div>
         
-        <div class="userpassword container">
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" required>
-            <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input type="password" name="confirm_password" id="confirm-password" required>
-        </div>
-
+            <div class="pwgroup">
+                <div class="formgroup3">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="formgroup3">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm_password" id="confirm-password" required>
+                </div>
+            </div>
         <button type="submit">Get Started!</button>
+        <p class="loginhere">Already have an account? <a href="#" class="login">Login</a></p>
     </form>
-    
 </body>
 </html>

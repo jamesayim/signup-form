@@ -1,8 +1,9 @@
 @font-face {
-    font-family: 'Norse';
-    src: url('fonts/Norse-Bold.otf') format('otf');
+    font-family: "Roboto Regular";
+    src: url("/fonts/Roboto-Regular.ttf");
     font-weight: normal;
     font-style: normal;
+    font-optical-sizing: auto;
 }
 
 * {
@@ -12,15 +13,119 @@
 }
 
 body {
-    font-family: "Norse";
+    font-family: "Roboto Regular", sans-serif;
+    height: 100vh;
+    letter-spacing: 1px;
+    word-spacing: normal;
+    line-height: 1.5;
 }
 
 .half-background {
     width: 35vw;
     height: 100vh;
-    background-image: url();
+    background-image: url(/images/real-estate-01.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     float: left;
+    flex: 1;
 }
 
+.topinfo-container {
+    padding: 60px 50px 30px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+}
+
+.top-info {
+    font-size: 18px;
+    word-spacing: normal;
+    letter-spacing: 0.6px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    padding: 30px 50px 0;
+    height: 50vh;
+    margin: 0 auto;
+    flex: 1;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+form label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 1px;
+    width: 100%;
+}
+
+form label[for="firstname"]::before,
+form label[for="useremail"]::before,
+form label[for*="password"]::before {
+    content: "* ";
+    color: red;
+}
+
+form input {
+    border-radius: 4px;
+    border: 1px solid rgb(201, 201, 201);
+    padding: 8px;
+    width: 100%;
+}
+
+.formgroup1, .formgroup2, .formgroup3 {
+    min-width: 180px;
+}
+
+form button {
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 900;
+    width: 190px;
+    padding: 12px;
+    position: absolute;
+    top: 108%;
+    font-family: "Roboto Regular";
+    color: white;
+    background-color: rgb(1, 98, 143);
+}
+
+.namegroup, .contactgroup, .pwgroup {
+    display: inline-flex;
+    gap: 40px;
+    margin-bottom: -70px;
+}
+
+.credit {
+    color: white;
+    position: absolute;
+    top: 90%;
+    left: 7%;
+    opacity: 90%;
+    font-size: 10px;
+}
+
+a[href*="unsplash"] {
+    color: white;
+}
+
+a[class*="login"] {
+    color: rgb(1, 98, 143);
+}
+p[class*="loginhere"] {
+    font-size: 15px;
+    position: absolute;
+    top: 125%;
+    left: 6.3%;
+    width: max-content;
+}
