@@ -79,6 +79,7 @@ form input {
     border: 1px solid rgb(201, 201, 201);
     padding: 8px;
     width: 100%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .formgroup1, .formgroup2, .formgroup3 {
@@ -98,6 +99,11 @@ form button {
     font-family: "Roboto Regular";
     color: white;
     background-color: rgb(1, 98, 143);
+    box-shadow: 0 1.5px 4px rgba(0, 50, 73, 0.6);
+}
+
+form button:hover {
+    background-color: rgba(0, 50, 73, 1);
 }
 
 .namegroup, .contactgroup, .pwgroup {
@@ -121,6 +127,8 @@ a[href*="unsplash"] {
 
 a[class*="login"] {
     color: rgb(1, 98, 143);
+    text-decoration: none;
+    font-weight: 600;
 }
 p[class*="loginhere"] {
     font-size: 15px;
@@ -128,4 +136,27 @@ p[class*="loginhere"] {
     top: 125%;
     left: 6.3%;
     width: max-content;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form input[type="password"]:focus {
+    outline: none;
+    border: 2px solid;
+    border-color: rgba(255, 0, 0, 1);
+}
+
+form input[type="email"]:valid {
+    border-color: rgb(0, 167, 0);
+}
+
+.errormessage {
+    font-size: 12px;
+    position: absolute;
+    top: 93%;
+    color: rgba(255, 0, 0, 1);
+}
+.hide {
+    display: none;
 }
